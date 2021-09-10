@@ -1,0 +1,199 @@
+:root {
+
+  --pale-silver: rgb(204, 192, 196);
+  --jet-stream: rgb(163, 142, 149);
+  --dark-liver: rgb(92, 75, 81);
+
+  --eton-blue: rgb(140, 190, 178);
+
+  --floral-white: rgb(251, 249, 236);
+  --lemon-meringue: rgb(242, 235, 191);
+
+  --deep-champagne: rgb(248, 211, 161);
+  --rajah: rgb(243, 181, 98);
+
+  --pastel-red: rgb(240, 96, 96);
+
+
+
+
+
+
+
+
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--floral-white);
+  margin-left: 3rem;
+  margin-right: 3rem;
+
+  font-family: 'Spartan', sans-serif;
+  color: var(--dark-liver);
+
+
+}
+
+main {
+  position: absolute;
+  bottom: 2rem;
+}
+
+@media screen and (min-width: 600px) {
+    body {
+      margin-left: 4rem;
+      margin-right: 4rem;
+    }
+    main {
+      bottom: 4rem;
+    }
+  }
+
+
+svg {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+}
+
+.svg-large {
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  .svg-mobile {
+    display: none;
+  }
+
+  .svg-large {
+    display: block;
+  }
+}
+
+
+/* NAVIGATION */
+
+
+header {
+  margin-top: 8rem;
+  position: relative;
+  z-index: 1;
+}
+
+nav > ul > li {
+  list-style: none;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+
+.home {
+  background-color: var(--dark-liver);
+  padding: 5px;
+  border-radius: 50%;
+  color: var(--floral-white);
+  margin-bottom: 1rem;
+}
+
+.home:hover {
+  background-color: var(--rajah);
+}
+
+
+
+.lang {
+
+  margin: 3rem;
+
+}
+
+.active {
+  color: var(--rajah);
+}
+
+.inactive {
+  color: var(--deep-champagne);
+}
+
+
+.active:hover , .inactive:hover {
+  background-color: var(--rajah);
+  color: var(--lemon-meringue);
+}
+
+
+
+/* TYPOGRAPHY */
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+  padding: 4px;
+}
+
+li > a:hover {
+background-color: var(--rajah);
+
+
+}
+
+
+.large-heading {
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 1.25;
+
+}
+
+.text-block {
+  margin-top: 1rem;
+}
+
+.secondary-text {
+  color: var(--eton-blue);
+}
+
+.primary-text {
+  color: var(--pastel-red);
+}
+
+p {
+  font-weight: 500;
+}
+
+
+
+
+button {
+
+  width: 150px;
+  height: 35px;
+  border: none;
+  margin-top: 1rem;
+  font-weight: 700;
+  box-shadow:
+    0 6.7px 12px rgba(0, 0, 0, 0.028),
+    0 22.3px 40.2px rgba(0, 0, 0, 0.042),
+    0 100px 180px rgba(0, 0, 0, 0.07);
+    border-radius: 2px;
+
+    background-color: var(--pastel-red);
+    color: var(--floral-white);
+
+}
+
+button:hover {
+
+  background-color: var(--floral-white);
+  color: var(--eton-blue);
+  border: 1px solid var(--eton-blue);
+
+}
